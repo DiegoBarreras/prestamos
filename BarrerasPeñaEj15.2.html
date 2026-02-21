@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prestamos (Ej15)</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th, td {
+            text-align: center;
+            vertical-align: middle;
+            padding: 5px;
+        }
+
+        .tabla-interna {
+            width: 100%;
+        }
+
+        .horario {
+            display: flex;
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align: center;">AGREGAR PRÉSTAMO DE EQUIPOS</h1>
+
+<table border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Carrera</th>
+        <th>Alum/Profe</th>
+        <th>Préstamo</th>
+        <th>H. de Préstamo</th>
+        <th>H. de Entrega</th>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="text" size="50" style="height: 60px;">
+        </td>
+
+        <td>
+            <table class="tabla-interna" border="1">
+                <tr>
+                    <th>C</th>
+                    <th>G</th>
+                    <th>S</th>
+                    <th>IP</th>
+                    <th>IN</th>
+                </tr>
+                <tr>
+                    <td colspan="5">
+                        Grupo: <input type="text">
+                    </td>
+                </tr>
+            </table>
+        </td>
+
+        <td>
+            <table class="tabla-interna" border="1">
+                <tr>
+                    <th>A</th>
+                    <th>P</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="opcion" value="0">
+                    </td>
+                    <td>
+                        <input type="radio" name="opcion" value="1"> 
+                    </td>
+                </tr>
+            </table>
+        </td>
+
+        <td>
+            <input type="text" size="50" style="height: 60px;">
+        </td>
+
+        <td>
+            <table border="1" >
+                <td class="horario">
+                    <label for="inputHPFecha">Fecha:</label>
+                    <input type="text" id="inputHPFecha">
+                </td>
+
+                <td class="horario">
+                    <label for="inputHPHora">Hora:</label>
+                    <input type="text" id="inputHPHora">
+                </td>
+
+                <td class="horario">
+                    <label for="inputHPFirma">Firma:</label>
+                    <input type="text" id="inputHPFirma">
+                </td>
+            </table>
+        </td>
+
+        <td>
+            <table border="1" >
+                <td class="horario">
+                    <label for="inputHPFecha">Fecha:</label>
+                    <input type="text" id="inputHPFecha">
+                </td>
+
+                <td class="horario">
+                    <label for="inputHPHora">Hora:</label>
+                    <input type="text" id="inputHPHora">
+                </td>
+
+                <td class="horario">
+                    <label for="inputHPFirma">Firma:</label>
+                    <input type="text" id="inputHPFirma">
+                </td>
+            </table>
+        </td>
+
+    </tr>
+</table> <br>
+<button>Agregar </button>
+</body>
+</html>
